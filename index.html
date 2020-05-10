@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Airbnb Clone" />
+    <meta name="keywords" content="casa, sítio, aluguel, temporada" />
+    <link rel="shortcut icon" href="" />
+    <title>
+      Airbnb Clone
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4b9780a374.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+  </head>
+
+  <body>
+    <header class="navbar-bg">
+      <div class="nav-logo">
+        <a class="" href="index.html"
+          ><img class="" src="./img/airbnb-logo.svg" alt="Logo Airbnb"
+        /></a>
+      </div>
+
+      <div class="navbar-filter">
+        <div class="navbar-filter-place">Brasília, Brasil</div>
+        <div class="navbar-filter-date">10 de mai. - 15 de mai.</div>
+        <div class="navbar-filter-input">1 hóspede</div>
+        <div class="navbar-filter-button">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="navbar-menu" id="">
+        <div class="globe">
+          <a href="#" id=""><i class="fas fa-globe"></i></a
+          ><i class="fas fa-caret-down"></i>
+        </div>
+        <div><a class="" href="#">Ajuda</a></div>
+        <div><a class="cadastro" href="#">Cadastre-se</a></div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="room-board">
+        <div class="room-board-sets">
+          <p>Mais de 20 acomodações · 10 de mai. - 15 de mai. · 1 hóspede</p>
+          <h1>Acomodações em Brasília</h1>
+        </div>
+
+        <div id="rootAccess">Carregando...</div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>Railson Ramés</p>
+        <div>
+          <a
+            href="https://github.com/railsonrames"
+            class="fab fa-github fa-lg"
+            target="_blank"
+            aria-hidden="true"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/railson"
+            class="fab fa-linkedin fa-lg"
+            target="_blank"
+            aria-hidden="true"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

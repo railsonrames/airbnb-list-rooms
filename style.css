@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100%;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+div {
+  border: 0px dotted red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #222228;
+}
+
+a:hover {
+  text-decoration: none;
+  text-decoration-line: underline;
+  color: #414147;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* ====== ** HEADER ** =============================================================== */
+/* =================================================================================== */
+
+.navbar-bg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgb(224, 224, 224);
+  width: 100%;
+  padding: 25px 24px 10px 24px;
+}
+
+@media (max-width: 800px) {
+  .navbar-bg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-logo {
+  max-width: 95px;
+  min-width: 50px;
+  height: auto;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+/* navbar - FITLTER */
+.navbar-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 580px;
+  height: 40px;
+  border-radius: 21px;
+  box-shadow: 0px 1px 2px rgba(143, 143, 143, 0.18);
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 0 10px 10px 10px;
+}
+
+.navbar-filter:hover {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-filter > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.082);
+  padding: 0px 16px;
+  height: 100%;
+  min-width: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 6;
+}
+
+.navbar-filter > div:last-child {
+  border-right: 0;
+  flex: 1;
+}
+
+.navbar-filter-input::placeholder {
+  font-size: 1px;
+}
+
+.navbar-filter-button > button > i {
+  color: #ff385c;
+}
+
+.navbar-menu {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  float: right;
+  font-size: 13px;
+  margin: 0 10px 10px 10px;
+}
+
+.globe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cadastro {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: 0 2px 1px rgb(214, 214, 214);
+}
+
+.cadastro:hover {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgb(214, 214, 214);
+  text-decoration-line: none;
+}
+
+/* ====== ** MAIN ** =============================================================== */
+/* ====== ========== =============================================================== */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  max-width: 100%;
+  align-items: center;
+}
+
+.room-board {
+  max-width: 750px;
+}
+
+.room-board-sets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.room-board-sets p {
+  font-size: 12px;
+}
+
+.room-board-sets h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.room-board-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.room-board-filter button {
+  background-color: white;
+  border: 1px solid #b0b0b0;
+  border-radius: 20px;
+  flex: 1 1 100px;
+  height: 40px;
+  max-width: 130px;
+  color: rgb(92, 92, 92);
+  margin: 3px;
+  display: block;
+  font-size: 12px;
+}
+
+.room-board-filter button:hover {
+  border: 1px solid #4d4d4d;
+}
+
+.room-board-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15px 0;
+  padding: 0px;
+}
+
+.room-div-img {
+  max-width: 375px;
+  margin-right: 15px;
+  flex: 1 1 200px;
+  padding-bottom: 10px;
+}
+
+.room-img {
+  max-width: 375px;
+  border-radius: 10px;
+}
+
+.room-description {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  height: 100%;
+  max-width: 375px;
+  flex: 2 1 200px;
+}
+
+.room-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding-bottom: 15px;
+  color: #414040;
+  font-size: 16px;
+  flex: 2;
+}
+
+.room-type p {
+  text-align: left;
+}
+
+.room-type span {
+  text-align: right;
+}
+
+.room-name {
+  display: flex;
+  padding-bottom: 15px;
+  color: #000000;
+  font-size: 19px;
+  flex: 2;
+}
+
+.room-assets {
+  display: flex;
+  flex-direction: column;
+  color: #414040;
+  font-size: 12px;
+  flex: 2;
+}
+
+.room-price {
+  display: flex;
+  padding-top: 25px;
+  align-self: flex-end;
+  text-align: end;
+  font-size: 17px;
+  flex: 1;
+}
+
+hr {
+  border-top: 1px solid #e6e6e6;
+}
+
+.map-content {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  max-width: 600px;
+  flex: 1 1 300px;
+}
+
+#mapid {
+  width: 100%;
+  height: 1000px;
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  #mapid {
+    height: 400px;
+  }
+}
+
+/* ====== ** FOOTER ** =============================================================== */
+/* =================================================================================== */
+
+footer {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #dddddd;
+  margin-top: 35px;
+  align-self: baseline;
+}
+
+.footer {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer div {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.disclaimer {
+  padding: 20px 40px 5px 40px;
+  color: #4d4d4d;
+  font-size: 13px;
+}
